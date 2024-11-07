@@ -1,0 +1,56 @@
+//******************************************************
+
+public class Main {
+    public static void main(String[] args) {
+        UserIDPass idandPass = new UserIDPass();
+
+    
+        Login LoginMenu = new Login(idandPass.getLoginInfo());
+        
+
+        
+    }
+
+}
+//******************************************************
+import java.util.HashMap;
+
+public class UserIDPass {
+    HashMap<String,String> LoginInfo = new HashMap<String,String>();
+        UserIDPass() {
+        LoginInfo.put("Trump","Harris");
+        LoginInfo.put("Texas","Chicken");
+        LoginInfo.put("Obama","Laden");
+    }
+
+    protected HashMap<String, String> getLoginInfo() {
+        return LoginInfo;   
+    }
+
+    }
+//******************************************************
+import java.util.HashMap;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Login
+implements ActionListener{
+    HashMap<String,String> LoginInfo = new HashMap<String,String>();
+    
+    void LoginPage(HashMap<String,String> LoginInfoOriginal){
+        LoginInfo = LoginInfoOriginal;
+        
+    }
+    public void ActionPerformer(ActionEvent) {
+
+    }
+}
+//******************************************************
+public class Welcome {
+    public static void main(String[] args) {
+        System.out.println("GUI");
+        
+    }
+}
+
+
