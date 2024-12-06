@@ -1,0 +1,44 @@
+body{
+    background-color: darkslategray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: azure;
+}
+.mainTextCenter{
+    text-align: center;
+    font-size: xx-large;
+}
+.container{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+.container {
+    grid-template-columns: repeat(3,1fr);
+}
+.item {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+.SignInBox{
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+    border: 10px solid darkcyan;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    align-self: center;
+}    
